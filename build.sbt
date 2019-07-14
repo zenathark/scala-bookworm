@@ -1,4 +1,4 @@
-name := """hello-play"""
+name := """scala-bookworm"""
 organization := "dev.zenathark"
 
 version := "1.0-SNAPSHOT"
@@ -9,6 +9,8 @@ scalaVersion := "2.13.0"
 
 libraryDependencies += guice
 libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "4.0.3" % Test
+libraryDependencies += "com.typesafe.akka" %% "akka-distributed-data" % "2.5.23"
+libraryDependencies += "org.abstractj.kalium" % "kalium" % "0.8.0"
 
 // Adds additional packages into Twirl
 //TwirlKeys.templateImports += "dev.zenathark.controllers._"
